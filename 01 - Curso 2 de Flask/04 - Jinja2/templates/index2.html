@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block title %}
+Teste
+{% endblock %}
+{% block content %}
+    <div class="container">
+        <h1>Interface</h1>
+        <div class="row">
+            <div class="div-lado" style="display: inline-block;">
+                <h2>Interface: </h2>
+            </div>
+            <div class="div-lado" style="display: inline-block;">
+                <h2>{{ dic.interface.name }}</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="div-lado" style="display: inline-block;">
+                <h2>Description: </h2>
+            </div>
+            <div class="div-lado" style="display: inline-block;">
+                <h2>{{ dic.interface.description }}</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="div-lado" style="display: inline-block;">
+                <h2>IP address: </h2>
+            </div>
+            <div class="div-lado" style="display: inline-block;">
+                <h2>{{ dic.interface.ip_address }}</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="div-lado" style="display: inline-block;">
+                <h2>Speed: </h2>
+            </div>
+            <div class="div-lado" style="display: inline-block;">
+                <h2>{{ dic.interface.speed }}</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="div-lado" style="display: inline-block;">
+                <h2>MTU: </h2>
+            </div>
+            <div class="div-lado" style="display: inline-block;">
+                <h2>{{ dic.interface.mtu }}</h2>
+            </div>
+        </div>
+    </div>
+{% endblock %}

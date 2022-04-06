@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <he  ad>
+    <meta charset="utf-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel= "stylesheet" type= "text/css" href= "../static/css/style.css">
+  </head>
+  <body>
+		{% with messages = get_flashed_messages(category_filter=["success"]) %}
+		{% if messages %}
+		<ul>
+			{% for message in messages %}
+			<li class="success">{{ message }}</li>
+			{% endfor %}
+		</ul>
+		{% endif %}
+		{% endwith %}
+    {% block content %}
+    {% endblock %}
+  </body>
+</html>

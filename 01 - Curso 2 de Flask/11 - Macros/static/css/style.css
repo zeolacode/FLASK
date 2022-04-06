@@ -1,0 +1,25 @@
+.success {
+	margin: 20px 20px 0px;
+	padding: 20px;
+	background-color: green;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.error{
+	margin: 20px 20px 0px;
+	padding: 20px;
+	background-color: red;
+	border-radius: 8px;
+	text-align: center;
+}
+
+h1 {
+	padding-top: 90px;
+	text-align: center;
+	
+}
+
+form {
+	text-align: center;
+}
